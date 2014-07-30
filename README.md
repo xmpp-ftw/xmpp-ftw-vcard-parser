@@ -13,7 +13,7 @@ See the XMPP-FTW demo repository - https://github.com/lloydwatkin/xmpp-ftw-demo
 
 # Build status
 
-[![Build Status](https://secure.travis-ci.org/xmpp-ftw/xmpp-ftw-vcard-parser.png)](http://travis-ci.org/lloydwatkin/xmpp-ftw-vcard-parser)
+[![Build Status](https://secure.travis-ci.org/xmpp-ftw/xmpp-ftw-vcard-parser.svg)](http://travis-ci.org/xmpp-ftw/xmpp-ftw-vcard-parser)
 
 # Install
 

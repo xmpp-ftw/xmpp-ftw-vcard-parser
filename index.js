@@ -1,1 +1,3 @@
-module.exports = function()
+'use strict';
+
+module.exports = require('./lib/process')
