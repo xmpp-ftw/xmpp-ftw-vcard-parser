@@ -1,0 +1,35 @@
+{
+  "vcard-temp": {
+    "fn": "Peter Saint-Andre"
+    "n": {
+        "family": "Saint-Andre",
+        "given": "Peter",
+        "middle": false
+    },
+    "nickname": "stpeter",
+    "url": "http://www.xmpp.org/xsf/people/stpeter.shtml",
+    "bday": "1966-08-06",
+    "org": {
+        "orgname": "XMPP Standards Foundation",
+        "orgunit": false,
+    },
+    "title": "Executive Director",
+    "role": "Patron Saint"
+    "tel": [
+        { "work": true, "voice": null, "number: "303-308-3282" },
+        { "work": false, "fax": false, "number": false },
+        { "work": false, "msg": false, "number": false },
+        { "home": false, "voice": false, "number": "303-555-1212" },
+        { "home": false, "fax": false, "number": false },
+        { "home": false, "msg": false, "number": false }
+    ],
+    "adr": [
+        { "work": false, "extadd": "Suite 600", "street": "1899 Wynkoop Street", "locality": "Denver", "region": "CO", "pcode": "80202", "ctry": "USA" },
+        { "home": false, "extadd": false, "street": false, "locality": "Denver", "region": "CO", "pcode": "80202", "ctry": "USA" }
+    ],
+    "email": [
+        { "internet: false, "pref": false, "userid" "stpeter@jabber.org" }
+    ],
+    "jabberid": [ "stpeter@jabber.org" ],
+    "desc": "More information about me is located on my\npersonal website: http://www.saint-andre.com/"
+}
