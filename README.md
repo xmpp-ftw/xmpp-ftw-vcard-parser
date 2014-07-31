@@ -1,5 +1,5 @@
-xmpp-ftw-vcard-temp
-====================
+xmpp-ftw-vcard-parser
+======================
 
 VCard XML⇄JSON parser/builder for XMPP(-FTW).
 
