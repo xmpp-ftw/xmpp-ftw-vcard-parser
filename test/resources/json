@@ -16,7 +16,7 @@
     "title": "Executive Director",
     "role": "Patron Saint",
     "tel": [
-        { "work": true, "voice": null, "number": "303-308-3282" },
+        { "work": false, "voice": false, "number": "303-308-3282" },
         { "work": false, "fax": false, "number": false },
         { "work": false, "msg": false, "number": false },
         { "home": false, "voice": false, "number": "303-555-1212" },
