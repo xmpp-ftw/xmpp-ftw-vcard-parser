@@ -24,6 +24,24 @@ describe('Checking input format', function() {
         
     })
     
+    it('Errors if input format not recognized', function(done) {
+        try {
+            processVCard(vCardTemp, { in: 'gobbledegook', out: 'gibberish' })
+        } catch (e) {
+            e.message.should.equal('Unrecognized input format')
+            done()
+        }
+    })
+    
+    it('Errors if output format not recognized', function(done) {
+        try {
+            processVCard(vCardTemp, { in: 'vcard-temp', out: 'gibberish' })
+        } catch (e) {
+            e.message.should.equal('Unrecognized output format')
+            done()
+        }
+    })
+    
     it('Throws error if output format not requested', function(done) {
         try {
             processVCard(vCardTemp)
