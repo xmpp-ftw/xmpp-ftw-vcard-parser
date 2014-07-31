@@ -1,15 +1,20 @@
 'use strict';
 
 var ltx = require('ltx')
+  , mockery = require('mockery')
 
 require('should')
 
-var processVCard = require('../../index')
+var processVCard = null
 
 /* jshint -W030 */
 describe('Checking input format', function() {
     
     var vCardTemp = new ltx.parse('<iq><vCard xmlns="vcard-temp"/></iq>')
+    
+    beforeEach(function() {
+        processVCard = require('../../index')
+    })
     
     describe('Input format not supplied', function() {
         
@@ -49,6 +54,32 @@ describe('Checking input format', function() {
             e.message.should.equal('No output format supplied')
             done()
         }
+    })
+    
+    it('Processes as expected', function() {
+        
+        mockery.enable()
+        
+        var inputStub = {
+            process: function(data) {
+                data.toString().should.equal(vCardTemp.toString())
+                return { data: 'hello' }
+            }
+        }
+        var outputStub = {
+            process: function(data) {
+                data.should.eql({ data: 'hello' })
+                return { data: data.data.toUpperCase() }
+            }
+        }
+        
+        mockery.registerMock('./input/vcard-temp', inputStub)
+        mockery.registerMock('./output/json', outputStub)
+        
+        var response = processVCard(vCardTemp, { in: 'vcard-temp', out: 'json' })
+        response.should.eql({ data: 'HELLO' })
+        
+        mockery.disable()
     })
     
 })

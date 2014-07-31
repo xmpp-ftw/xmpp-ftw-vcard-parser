@@ -37,6 +37,6 @@
     "grunt-mocha-cli": "~1.4.0",
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
-    "proxyquire": "^1.0.1"
+    "mockery": "^1.4.0"
   }
 }
