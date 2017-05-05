@@ -1,6 +1,8 @@
 xmpp-ftw-vcard-parser
 ======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xmpp-ftw/xmpp-ftw-vcard-parser.svg)](https://greenkeeper.io/)
+
 VCard XML⇄JSON parser/builder for XMPP(-FTW).
 
 https://github.com/xmpp-ftw/xmpp-ftw.git
